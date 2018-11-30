@@ -1,0 +1,28 @@
+{
+  "name": "popup-console.js",
+  "version": "0.0.2",
+  "repository": "alex-heritier/popup-console.js",
+  "author": "Alex <alex.heritier@gmail.com>",
+  "license": "MIT",
+  "main": "dist/popup-console.js",
+  "scripts": {
+    "build": "rm -rf dist/* && NODE_ENV=production webpack",
+    "dev": "rm -rf dist/* && webpack --watch",
+    "patch": "npm version patch -m 'v%s'",
+    "minor": "npm version minor -m 'v%s'",
+    "major": "npm version major -m 'v%s'",
+    "postversion": "git push; git push --tags",
+    "prepublish": "rm -rf dist/index.*",
+    "prepages": "npm run build && cp gh-pages/index.* dist",
+    "pages": "gh-pages -d dist"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": ["console", "popup"]
+}
