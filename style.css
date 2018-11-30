@@ -1,0 +1,24 @@
+#pcon-console {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -180px;
+
+  width: 500px;
+  height: 360px;
+  background-color: #222;
+  border-radius: 10px;
+  z-index: 1001;
+}
+
+#pcon-background {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 1000;
+}

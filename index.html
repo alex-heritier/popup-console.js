@@ -1,0 +1,20 @@
+<link rel="shortcut icon" href="#" />
+<link rel="stylesheet" href="style.css" />
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<script type="module" src="popup_console.js"></script>
+<script type="module">
+  'use strict';
+
+  import PopupConsole from "./popup_console.js";
+
+  const config = {};
+  const pcon = new PopupConsole(config);
+
+  $(document).ready(function() {
+    $('#toggle-console').click(() => {pcon.toggle();});
+  });
+</script>
+
+<button id="toggle-console">Toggle console</button>

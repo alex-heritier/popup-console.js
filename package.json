@@ -4,7 +4,7 @@
   "repository": "alex-heritier/popup-console.js",
   "author": "Alex <alex.heritier@gmail.com>",
   "license": "MIT",
-  "main": "dist/popup-console.js",
+  "main": "popup-console.js",
   "scripts": {
     "build": "rm -rf dist/* && NODE_ENV=production webpack",
     "dev": "rm -rf dist/* && webpack --watch",
@@ -16,7 +16,9 @@
     "prepages": "npm run build && cp gh-pages/index.* dist",
     "pages": "gh-pages -d dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {},
   "files": [
     "dist"
@@ -24,5 +26,8 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "keywords": ["console", "popup"]
+  "keywords": [
+    "console",
+    "popup"
+  ]
 }
